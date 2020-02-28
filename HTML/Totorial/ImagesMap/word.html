@@ -1,0 +1,24 @@
+1. <map>      : Thẻ <map> xác định bản đồ hình ảnh. Bản đồ hình ảnh là một hình ảnh với các khu vực có thể khi kích chuột.
+
+    - Để tạo bản đồ hình ảnh, bạn cần một hình ảnh và bản đồ chứa một số quy tắc mô tả các khu vực có thể nhấp.
+        +Hình ảnh được chèn bằng thẻ <img>. Sự khác biệt duy nhất so với các hình ảnh khác là bạn phải thêm thuộc tính usemap:
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+        
+    - Phần tử <map> được sử dụng để tạo bản đồ hình ảnh và được liên kết với hình ảnh bằng cách sử dụng thuộc tính name:
+        <map name="workmap"></map>
+        Thuộc tính name phải có cùng giá trị với thuộc tính usemap.
+    
+2. <area>    : Một vùng có thể kích chột được xác định bằng phần tử <area>.
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+        - shape  : phải xác định hình dạng của khu vực
+            + rect   : định nghĩa một vùng hình chữ nhật
+            + circle : định nghĩa một vùng tròn
+            + poly   : định nghĩa một vùng đa giác
+            + default: xác định toàn bộ khu vực
+        - coords : Bạn phải xác định một số tọa độ để có thể đặt vùng có thể nhấp vào hình ảnh.
+
+
+- Sử dụng phần tử <map> HTML để xác định bản đồ hình ảnh
+- Sử dụng phần tử <area> HTML để xác định các khu vực có thể nhấp trong bản đồ hình ảnh
+- Sử dụng thuộc tính usemap phần tử <img> của HTML để trỏ đến bản đồ hình ảnh
