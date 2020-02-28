@@ -1,0 +1,17 @@
+1. <picture></picture>
+
+    - Là phần tử mới trong HTML5 để thêm linh hoạt hơn khi chỉ định hình ảnh
+    - Phần tử <picture> chứa một số phần tử <source>, mỗi phần tử tham chiếu đến các hnguoonf hình ảnh khác nhau. Bằng cách này, trình duyệt có thể chọn hình ảnh phù hợp nhất với chế độ xem và/ hoặc thiết bị hiện tại
+2. <source media="(min-width: 465px)" srcset="img_car.jpg">
+
+    - media (media="(min-width: 465px)") : Xác định độ rộng tối thiểu để hiển thị ảnh
+    - srcset (srcset="img_car.jpg")      : Đường dẫn của ảnh cần được hiển thị.
+3. <img>      : Luôn chỉ định phần tử <img> là phần tử con cuối cùng của phần tử <hình ảnh>. Phần tử <img> được sử dụng bởi các trình duyệt không hỗ trợ phần tử <hình ảnh> hoặc nếu không có thẻ <source> nào khớp.
+
+
+Khi dùng phần tử picture cần chú ý:
+
+1. Bandwidth (Băng thông)
+        Nếu bạn có một màn hình nhỏ hoặc thiết bị, không cần thiết phải tải một tệp hình ảnh lớn. Trình duyệt sẽ sử dụng phần tử <source> đầu tiên với các giá trị thuộc tính phù hợp và bỏ qua bất kỳ phần tử nào sau đây
+2. Hỗ trợ định dạng (Format Support)
+        Một số trình duyệt hoặc thiết bị có thể không hỗ trợ tất cả các định dạng hình ảnh. Bằng cách sử dụng phần tử <picture>, bạn có thể thêm hình ảnh của tất cả các định dạng và trình duyệt sẽ sử dụng định dạng đầu tiên mà nó nhận ra và bỏ qua bất kỳ điều nào sau đây.
